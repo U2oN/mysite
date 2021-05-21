@@ -1,0 +1,162 @@
+@CHARSET "UTF-8";
+
+/*ヘッダー*/
+header {
+	height: 15vh;
+	width: 100%;
+	background-color: aqua;
+	overflow: hidden;
+}
+
+.hcontents {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 10px;
+}
+
+.title {
+	font-weight: bold;
+	padding-top: 25px;
+}
+
+.logout {
+
+}
+/*フッター*/
+footer {
+	width: 100%;
+	background-color: aqua;
+	display: flex;
+}
+
+footer a{
+	color:blue;
+}
+
+.ft {
+	margin-left: 20px;
+}
+/*エラーメッセージ*/
+.error {
+	color: red;
+}
+
+/*ログインページ*/
+.login {
+	margin-left: 150px;
+}
+
+/*商品リストページ*/
+.listpage {
+	margin: 10px auto;
+	width: 90%;
+}
+
+.search {
+	display: flex;
+}
+
+.NameSearch {
+
+}
+
+.GenreSearch {
+
+}
+
+.ser:HOVER {
+	color: blue;
+	cursor: pointer;
+}
+
+/*テーブル関連*/
+table td {
+	padding: 5px;
+}
+
+table th:not (.details ):hover {
+	cursor: pointer;
+}
+
+[title="書籍"] {
+	background-color: #FFDDFF;
+}
+
+[title="食品"] {
+	background-color: #DDFFFF;
+}
+
+/*在庫5以下*/
+[title="0"] {
+	font-weight: bold;
+	color: red;
+}
+
+[title="1"] {
+	font-weight: bold;
+	color: red;
+}
+
+[title="2"] {
+	font-weight: bold;
+	color: red;
+}
+
+[title="3"] {
+	font-weight: bold;
+	color: red;
+}
+
+[title="4"] {
+	font-weight: bold;
+	color: red;
+}
+
+[title="5"] {
+	font-weight: bold;
+	color: red;
+}
+
+table td {
+	position: relative;
+}
+
+.mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	background-color: yellow;
+}
+
+.mask:HOVER {
+	opacity: 0.8;
+}
+
+.order {
+	font-size: 5px;
+}
+
+.tablesorter-headerUnSorted:not(.details){
+background-image:url('../img/sort.png');
+background-size:18px;
+background-repeat:no-repeat;
+background-position:bottom right;
+}
+.tablesorter-headerAsc {
+	background-image: url('../img/down.png');
+	background-size: 8px;
+	background-repeat: no-repeat;
+	background-position: center right;
+	border-bottom: #000 2px solid;
+}
+
+.tablesorter-headerDesc {
+	background-image: url('../img/up.png');
+	background-size: 8px;
+	background-repeat: no-repeat;
+	background-position: center right;
+	border-bottom: #000 2px solid;
+}
